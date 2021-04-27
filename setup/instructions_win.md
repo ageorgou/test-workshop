@@ -43,3 +43,7 @@ Check that your installation has been successful:
 
 ## Python
 {% include python.md os="win" %}
+
+
+## Pytest
+{% include pytest.md %}
