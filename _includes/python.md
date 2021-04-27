@@ -22,5 +22,7 @@ You don't need to do any extra steps.
 {% endif %}
 
 Once Anaconda is installed, if you want it to be always available from your terminal, run 
+`conda init bash` {% if include.os != "win" %}(or with the specific terminal you are running, e.g., zsh) {% endif %}.
 
-`conda init bash` (or with the specific terminal you are running, e.g., zsh) 
+To check that the installation is successful, run `python --version` in your terminal.
+This should show a verion starting with `Python 3`.
