@@ -42,4 +42,4 @@ Check that your installation has been successful:
 1. If you run the command `git --version`, it shows you are using the 2.2831 version of git.  
 
 ## Python
-{% include python.md %}
+{% include python.md os="win" %}

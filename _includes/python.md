@@ -11,13 +11,16 @@ To check that you have Python installed, and what version, run the command `pyth
 To install Anaconda, [download the right installer](https://www.anaconda.com/products/individual#Downloads)
 for your operating system and follow the steps of the installer. 
 
-Windows 
 
-Install Python 3 by running the Anaconda Installer, using all of the defaults for installation except make sure to check Add Anaconda to my PATH environment variable. 
 
-Linux 
-
-The installation requires using the shell. Navigate to the directory where the installer has been downloaded and execute it typing: bash Anaconda3- and press Tab to autocomplete to the full file name. Follow the text-only prompts. 
-
-Mac
+{% if include.os == "win" %}
+Install Python 3 by running the Anaconda Installer, using all of the defaults for installation except make sure to check Add Anaconda to my PATH environment variable.
+{% elsif include.os == "linux" %}
+The installation requires using the shell. Navigate to the directory where the installer has been downloaded and execute it typing: `bash Anaconda3-` and press Tab on your keyboard to autocomplete to the full file name. Follow the text-only prompts.
+{% elsif include.os == "mac" %}
 You don't need to do any extra steps.
+{% endif %}
+
+Once Anaconda is installed, if you want it to be always available from your terminal, run 
+
+`conda init bash` (or with the specific terminal you are running, e.g., zsh) 
